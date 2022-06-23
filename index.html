@@ -11,26 +11,36 @@
   </head>
 
   <body>
-    <script src="app.js"></script>
 
-    <h1>Tic Tac Toe</h1>
+    <header>
+        <h1 class="Title">Tic Tac Toe</h1>
 
-    <table class="board">
+        <h3 class="sideText">
+            <i>3 In a Row!</i></h3>
+    </header>
+
+    <table id="board">
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="cell" id="00">x</td>
+        <td class="cell" id="01">x</td>
+        <td class="cell" id="02">x</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="cell" id="10">x</td>
+        <td class="cell" id="11">x</td>
+        <td class="cell" id="12">x</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="cell" id="20">x</td>
+        <td class="cell" id="21">x</td>
+        <td class="cell" id="22">x</td>
       </tr>
     </table>
+
+    <section class="winningText" id="winningText">
+      <div clas="You Win!"></div>
+    <section class="restartText">Restart>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
