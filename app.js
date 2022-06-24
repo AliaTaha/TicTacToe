@@ -3,10 +3,10 @@
 
 const initialState = {              //defining beginning variable
 
-    const playerX = 'x'             //identifying current players
-    const playerO = 'o'             
+  const player0 = 'x'             //identifying current players
+  const player1 = 'o'             
 
-    board: [                        //board starting point
+    let board: [                        //board starting point
       [null, null, null],
       [null, null, null],
       [null, null, null]
@@ -25,38 +25,24 @@ const winningState = [              //establishing winning conditions
 ];
 
 
+//using all elements that match CSS selectors
+let cell = document.querySelectorAll('td')      //why query
+//using id tag from html to save board elements
+let board = document.getElementById('board')
+//using winning text element to save message 
+let winningText = document.getElementById('winningText')  //do I need div of winning text?
+let restartButton = document.getElementById('restartButton')
+let winningTextMessage = document.getElementById(winningTextMessage)
 
 
 
 
+// board.addEventListener("click", (event) => {
+//    let id = event.target.id
 
+function buildInitialState() {
 
-
-
-
-
-let initialState = {
-    players: ['x', 'o'],
-    board: [
-      [null, null, null],
-      [null, null, null],
-      [null, null, null]
-    ]
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 // let tictactoe = [
