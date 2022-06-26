@@ -21,26 +21,40 @@
 
     <table id="board">
       <tr>
-        <td class="cell" id="00">x</td>
-        <td class="cell" id="01">x</td>
-        <td class="cell" id="02">x</td>
+        <td class="cell" id="00"></td>
+        <td class="cell" id="01"></td>
+        <td class="cell" id="02"></td>
       </tr>
       <tr>
-        <td class="cell" id="10">x</td>
-        <td class="cell" id="11">x</td>
-        <td class="cell" id="12">x</td>
+        <td class="cell" id="10"></td>
+        <td class="cell" id="11"></td>
+        <td class="cell" id="12"></td>
       </tr>
       <tr>
-        <td class="cell" id="20">x</td>
-        <td class="cell" id="21">x</td>
-        <td class="cell" id="22">x</td>
+        <td class="cell" id="20"></td>
+        <td class="cell" id="21"></td>
+        <td class="cell" id="22"></td>
       </tr>
     </table>
 
-    <section class="winning-Text" id="winningText">
-      <div class="winning-Text-Message"></div>
-      <button class="restart-Button" id="restartButton">Restart</button>
-    </section>
+    <div class="hidden" id="winningTextArea">
+      <h2 class="winning-Text-Message" id="winningTextMessage">X Wins!</h2>
+      <button class="restart-Button" id="restartButton">Play Again</button>
+    </div>
+
+    <div class="player-Area" id="playerArea">
+      <div class="player1" id="p1">
+        <label>Player 1:</label>
+        <input id="p1" type="text" />
+      </div>
+      <div class="player2" id="p2">
+        <label>Player 2:</label>
+        <input id="p2" type="text" />
+      </div>
+      <div class="player-Button-Area" id="playerButtonArea">
+        <button class="player-Button" id="playerButton">Submit</button>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
